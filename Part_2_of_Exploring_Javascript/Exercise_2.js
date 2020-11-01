@@ -1,48 +1,26 @@
-function show_First(n) {
-
-our_Array = ["Bob", "Bill", "Jim"];
-
-
-console.log(our_Array[n])}
-
-
-show_First(1)
-
-
-function remove_last() {
-
-our_Array1 = ["Bob", "Bill", "Jim"];
-
-our_Array1.pop()
-console.log(our_Array1)
-
+function loop_1to20() {
+let n = 0; 
+while (n < 20) { n++;
+if ((n % 2 === 0))
+console.log(n + " is even")
+else console.log(n + " is odd")
 }
+console.log(n);
+  }
 
-remove_last()
+   loop_1to20()
 
-
-
-function print_Random() {
-our_Array2 = ["Bob", "Bill", "Jim"]
-
-var item = our_Array2[Math.floor(Math.random() * our_Array2.length)];
-
-console.log(our_Array2) }
+    console.log("NEXT FUNCTION IS 1-10 WITH EACH NUMBER TIMES 9 AND LOGGED")
 
 
-print_Random()
+function loop_1to10() {
+    let e = 0; 
+    while (e < 10) { e++;
+    console.log(e*9); }
+    
+    }
+    
+    loop_1to10();
 
 
-
-
-
-function add_print(n) {
-
-our_Array3 = [2,3,4]
-
-our_Array3.unshift("1 is before 2") 
-
-
-console.log(our_Array3) }
-
-add_print()
+    
