@@ -1,0 +1,3 @@
+git remote add origin https://github.com/Vasilioskw/Digital_Crafts.git
+git branch -M main
+git push -u origin main
