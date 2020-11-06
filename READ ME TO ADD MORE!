@@ -1,6 +1,6 @@
-git add "Stuff"
-git commit -m "deleted HTML101"
-git push origin main
+git add "Stuff" or .
+git commit -m "stuff"
+git push -u origin main /or/ just "Git push" (I preffer)
 
 --------
 
