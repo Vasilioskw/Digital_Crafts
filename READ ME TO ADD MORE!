@@ -1,3 +1,9 @@
+git add "Stuff" or .
+git commit -m "stuff"
+git push -u origin main /or/ just "Git push" (I preffer)
+
+--------
+
 git remote add origin https://github.com/Vasilioskw/Digital_Crafts.git
 git branch -M main
 git push -u origin main
