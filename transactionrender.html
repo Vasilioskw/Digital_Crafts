@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>  
+<body>
+
+  <div id="transactionContainer">
+    <div class="container">
+    <div class = "row">
+
+
+    </div>
+
+</div>
+
+  <script>
+    function renderTransaction(transaction) {
+      return `
+      <div class='transaction' data-id='${transaction.id}' >
+        <h1>To: ${transaction.to}</h1>
+        <h2>From: ${transaction.from}</h2>
+        <span>Date: ${transaction.date}</span>
+        <b>$${transaction.amount}</b>
+        <br />
+        ${renderMessage(transaction.message)}
+      </div>
+      `
+    }
+
+    function renderMessage(message){
+      if(message) {
+        return `<p>${message}</p>`
+      } 
+      return ''
+    }
+
+    function renderTransactions(transactions) {
+      var render = "";
+
+      transactions.forEach(function(transaction){
+        render += renderTransaction(transaction);
+      });
+      console.log(render);
+      return render;
+    }
+
+    var transactionContainer = document.getElementById('transactionContainer');
+
+    var transactions = [
+      {
+      id: 24,
+      date: "December 12, 2020",
+      amount: 34.53,
+      to: "Kamilah",
+      from: "Juan",
+      message: "Money for cooking with princesses"
+      },
+      {
+      id: 25,
+      date: "December 3, 2020",
+      amount: 42.00,
+      to: "Kamilah",
+      from: "Juan"
+      },
+      {
+      id: 26,
+      date: "December 20, 2020",
+      amount: 60.53,
+      to: "Kamilah",
+      from: "Juan"
+      }
+    ];
+
+      transactionContainer.innerHTML = renderTransactions(transactions);
+  </script>
+  </body>
+</html>
