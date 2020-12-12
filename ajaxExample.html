@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title> 
+        Ajax Example
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  </head>
+
+<body>
+
+    
+  <button id="button_1">Gernerate Doggo</button>
+    
+
+<div id="axiosDog">
+
+</div>
+
+<script>   
+function reload() {
+axios.get('https://dog.ceo/api/breeds/image/random').then(function(response) {
+
+document.getElementById('axiosDog').innerHTML = `<img src=${response.data.message}>`;
+})
+};
+
+const button = document.getElementById('button_1');
+button.addEventListener('click', function(event) {
+    event.target.innerHTML = 'Generating Doggo'
+reload()
+
+});
+
+</script>
+
+
+</body>
+
+</html>
