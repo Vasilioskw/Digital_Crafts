@@ -1,0 +1,62 @@
+<html> 
+
+<head> 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+
+<body>
+    
+
+<script> 
+var urls = [
+    'https://dog.ceo/api/breed/beagle/images/random',
+    'https://dog.ceo/api/breed/chow/images/random',
+    'https://dog.ceo/api/breed/akita/images/random',
+    'https://dog.ceo/api/breed/dingo/images/random',
+    'https://dog.ceo/api/breed/eskimo/images/random'
+  ];
+
+  axios.get(urls[0]).then(function(response){
+    console.log("data was fetched!");
+
+    axios.get(urls[1]).then(function(response){
+        console.log("data was fetched!")
+
+        axios.get(urls[2]).then(function(response){
+            console.log("data was fetched!")
+
+            axios.get(urls[3]).then(function(response){
+                console.log("data was fetched!")
+
+                axios.get(urls[4]).then(function(response){
+                    console.log("data was fetched!")
+
+                });
+            });
+        });
+
+    });
+});
+ ///////
+
+
+ //easy simple way
+
+ var p1 = axios.get(urls[0]);
+// p stands for promise
+var p2 = axios.get(urls[1]);
+var p3 = axios.get(urls[2]);
+var p4 = axios.get(urls[3]);
+var p5 = axios.get(urls[4]);
+
+Promise.all([p1,p2,p3,p4,p5]).then((responses) => {
+console.log(responses);
+console.log('done');
+)
+}
+</script>
+
+</body>
+
+</html>
