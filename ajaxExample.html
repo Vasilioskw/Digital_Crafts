@@ -28,10 +28,10 @@
 
 <script>
 
-axios.get('https://dog.ceo/api/breeds/list').then((response) => {
+axios.get('https://dog.ceo/api/breeds/list').then(response => {
 console.log(response);
 var breedSelect = '';
-response.data.message.forEach((value)) => {
+response.data.message.forEach(value => {
 breekSelect += `<option value="${value}">${value}/option>`
 
 });
@@ -41,7 +41,7 @@ document.getElementById('selectBreed').innerHTML = breedSelect;
 
 
 document.getElementById('axiosDog').innerHTML = `<img src=${response.data.message}>`;
-})
+
 
 
 function reload() {
