@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
+
+
+
+
+  <title> Scene it Movie search API Project</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<head>
+
+
+
+    <head>
 
 
 </head>
@@ -9,13 +23,154 @@
 <!--  --> 
 
 <body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1> Scene It</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="searchButton" class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" id="movie-results">
+
+    </div>
+  </div>    
+  <script src="data.js" ></script>
+
+
+
+
+
+<br>
+
+    
+ <div class= row> 
+   
+  <!-- ROW 1 - COL 4 -->
+  <div class="card flex container col-4" style="width: 18rem;">
+    <img class="card-img-top" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+
+         
+          <!-- ROW 1 - COL 8 -->
+        
+        
+      
+       
+          <div class="card flex container col-4" style="width: 18rem;">
+            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+
     
 
+         <!-- ROW 1 - COL 12 -->
+        
+
+         <div class="card flex container col-4" style="width: 18rem;">
+          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          </div>
+          
+          <!-- ------------------------------ -->
+                          <!-- ROW 2 - COL 4 -->
+                          <div class="card flex container col-4" style="width: 18rem;">
+                            <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            </div>
+                 
+                  <!-- ROW 2 - COL 8 -->
+                
+                  <div class="card flex container col-4" style="width: 18rem;">
+                    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+        
+        
+                                       <!-- ROW 2 - COL 12 -->
+                
+        
+                                       <div class="card flex container col-4" style="width: 18rem;">
+                                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        </div>
+
+                                  <!-- --------------------------------  -->
+                                       <!-- ROW 3 - COL 4 -->
 
 
-
-
-
+                                       <div class="card flex container col-4" style="width: 18rem;">
+                                        <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        </div>
+                             
+                              <!-- ROW 3 - COL 8 -->
+                            
+                              <div class="card flex container col-4" style="width: 18rem;">
+                                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                </div>
+                    
+                    
+                                                   <!-- ROW 3 - COL 12 -->
+                            
+                    
+                                                   <div class="card flex container col-4" style="width: 18rem;">
+                                                    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Card title</h5>
+                                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    </div>
+                                                    </div>
+                       
+    </div>
+                             
+                                
+                    
 
 
 

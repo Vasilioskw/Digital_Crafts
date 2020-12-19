@@ -1,0 +1,9 @@
+.card-img-top{
+    margin: 50px;
+    border-top: 50px;
+    border-bottom: 50px;
+    border-left: 50px;
+    border-right: 50px;
+border-style: solid;
+border-width: 50px;
+}
